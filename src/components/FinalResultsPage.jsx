@@ -26,7 +26,7 @@ const FinalResultsPage = ({selectedPathOption,setSelectedPathOption}) => {
       <h1 className="text-2xl font-bold">Learning paths based on your answers</h1>
       <p className="text-[10px]  opacity-70">Choose one to get started. You can switch anytime.</p>
       <div className="flex flex-col md:flex-row  gap-4 mt-10 ">
-        {options.map((option,index)=><div className={`p-6 pl-4 pr-4 flex gap-2 w-72 h-32 shadow border-[2px] relative shadow-gray-200 ${selectedPathOption && option &&  option.id===selectedPathOption.id ? " border-yellow-200 shadow-gray-200 shadow-lg" : ""}`}     onClick={() => handleSelectOption(option)}
+        {options.map((option,index)=><div className={`p-6 pl-4 pr-4 flex gap-2 w-72 h-32 shadow border-[2px] relative shadow-gray-200  cursor-pointer ${selectedPathOption && option &&  option.id===selectedPathOption.id ? " border-yellow-200 shadow-gray-200 shadow-lg" : ""}`}     onClick={() => handleSelectOption(option)}
 >
             {index===0 && <p className="bg-yellow-500 text-black text-[10px] w-fit p-[2px] rounded-full justify-center text-nowrap absolute h-fit top-[-7%] left-[50%]">MOST POPULAR</p>}
             <p className="text-xs text-left w-38">

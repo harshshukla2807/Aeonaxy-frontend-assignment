@@ -58,7 +58,7 @@ const FourthStep = ({selectedMathOption,setMathSelectedOption}) => {
        Choose the highest level you feel confident in — you can always adjust later.
       </p>
       <div className="flex flex-wrap gap-2 pl-8 pr-8 md:gap-4 mt-12 mb-6 w-screen items-center justify-center">
-        {options.map((option, index) => <div key={index} className={`flex flex-col items-center justify-between pt-2 pb-2 pr-2 w-44 h-40 md:pt-3 md:pb-3 pl-5 rounded-md bg-white border-gray-200  ${selectedMathOption && option &&  option.id===selectedMathOption.id ? "border-yellow-200 shadow-gray-200 shadow-lg" : ""} border-[1px] `}>
+        {options.map((option, index) => <div key={index} className={`flex flex-col items-center justify-between pt-2 pb-2 pr-2 w-44 h-40 md:pt-3 md:pb-3 pl-5 rounded-md bg-white border-gray-200 cursor-pointer  ${selectedMathOption && option &&  option.id===selectedMathOption.id ? "border-yellow-200 shadow-gray-200 shadow-lg" : ""} border-[2px] `}>
           <OptionItem
             key={index}
             option={option}

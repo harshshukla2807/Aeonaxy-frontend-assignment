@@ -57,7 +57,7 @@ const FirstStep = ({selectedOption,setSelectedOption}) => {
         This will help us personalise your experience.
       </p>
       <div className="flex flex-col gap-2 pl-8 pr-8 md:gap-4  md:w-[37rem] mt-7">
-        {options.map((option, index) => <div key={index} className={`pt-2 pb-2 pr-2 w-full md:pt-3 md:pb-3 pl-5 rounded-md bg-white border-gray-200 ${selectedOption && option &&  option.id===selectedOption.id ? "border-yellow-200 shadow-gray-200 shadow-lg" : ""} border-[1px] `}>
+        {options.map((option, index) => <div key={index} className={`pt-2 pb-2 pr-2 w-full md:pt-3 md:pb-3 pl-5 rounded-md bg-white border-gray-200 ${selectedOption && option &&  option.id===selectedOption.id ? "border-yellow-200 shadow-gray-200 shadow-lg" : ""} border-[2px] cursor-pointer`}>
           <OptionItem
             key={index}
             option={option}
